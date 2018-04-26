@@ -6,6 +6,7 @@ import java.util.HashMap;
 public class Indexer implements Serializable {
     private final HashMap<String, Index> map;
 
+    //构造方法中创建索引
     public Indexer() {
         this.map = new HashMap<>();
     }
@@ -14,6 +15,7 @@ public class Indexer implements Serializable {
         return map.get(key);
     }
 
+    //索引就放到一个map里面
     public void put(String key, Index index) {
         map.put(key, index);
     }
